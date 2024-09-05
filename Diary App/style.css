@@ -1,0 +1,136 @@
+
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FEFADC;
+    color: #755B69;
+    border-color: #755B69;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 14px;
+    min-height: 100vh;
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+form,
+section {
+    border-color: #755B69;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    outline: #755B69;
+}
+
+button {
+    border: 1px solid;
+    box-shadow: none;
+    width: 35%;
+    height: 25px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+
+
+button:hover  {
+    cursor: pointer;
+}
+
+form textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 260px;
+    padding: 14px;
+    border-radius: 15px;
+    color: #755B69;
+    border: 1px solid #755B69; /* Add a default border */
+    font-size: medium;
+}
+
+form textarea:focus {
+    border: 2px solid #755B69;
+    outline: none; /* Remove default browser outline */
+}
+
+.IconBtn {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+}
+
+.IconBtn:hover {
+    font-size: 16px;
+}
+
+.entriesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.entry {
+    position: relative;
+    padding: 14px;
+    border: 1px solid #755B69;
+    border-radius: 12px;    
+    display: flex;
+    justify-content:baseline;
+    min-height: 65px;
+}
+
+.icons,
+.timestamp {
+    position: absolute;
+    align-self: center;
+    max-width: fit-content;
+    border: none;       
+    box-shadow: none;    
+    background: none;    
+    display: flex;   
+    gap: 14px; 
+}
+    
+.icons {    
+    padding: 10px;
+    top: 0;
+    left: 0;
+}
+    
+.timestamp {
+    padding-right: 7px;
+    padding: 6px;
+    font-size: 12px;
+    top: 0;
+    right: 0;
+    font-weight: 600;
+}
+
+.writing {
+    padding-top: 25px;
+}
+
+.enterBtn:hover  {
+    outline: auto;
+    font-weight: bold;
+}
